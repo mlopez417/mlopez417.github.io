@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SeatGeek Ticketing Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="./">Home</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="./">Home</a></li>
+                                <li><a href="ticketing.html">Ticketing Analysis</a></li>
+								<li><a href="airbnb.html">AirBnB Analysis</a></li>
+								<li><a href="my311.html">My311 Dashboard</a></li>
+								<li><a href="BreedDashboard.html">DogTime Dashboard</a></li>
+								<!--<li><a href="#">Log In</a></li>-->
+								<!--<li><a href="#">Sign Up</a></li>-->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>SeatGeek Ticketing Dashboard and Analysis</h2>
+								<p>An interactive Excel dashboard analysing Entertainment events in Los Angeles.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Goal</h3>
+									<p>An in-depth exploration of Los Angeles' entertainment scene, leveraging data from SeatGeek to weave 
+										a narrative that delves into event popularity, venue significance, and pricing dynamics, providing 
+										insights into the heartbeat of LA's vibrant entertainment pulse.
+									</p>
+									<h3 class="major">Outcome</h3>
+									<p>This project encapsulates a comprehensive exploration of Los Angeles's entertainment scene through 
+										a detailed analysis of event data. By dissecting the intricate relationships between event types, 
+										pricing dynamics, venue influence, and temporal patterns, a vivid picture of the city's entertainment 
+										pulse emerges. The Excel dashboard serves as a storytelling medium, providing a user-friendly 
+										interface that not only presents data but also provokes questions and curiosity.
+									</p>	
+									<p>Key actionable insights from this analysis can guide:<br>
+										
+										<b>Event Organizers</b> in understanding when to announce events for maximum impact, and how pricing 
+										strategies might differ based on the type of event and venue.<br>
+										<b>Marketers</b> in identifying peak periods for specific events, aiding in more targeted promotional campaigns.<br>
+										<b>Venue Owners</b> in understanding their standing and influence in attracting audiences and how 
+										to enhance the venue experience further. </p>
+									View the dashboard <a href="https://github.com/mlopez417/seatgeek_excel_analysis">on my Github,</a><br><BR>
+									<center><img src="images/seatgeek_Dashboard2.png" width="900"><Br><br></center>
+									<h3 class="major">The Process</h3>
+									<p>It began by sourcing event data for Los Angeles through the SeatGeek API, focusing on a diverse range of entertainment 
+										categories. After a detailed data cleaning and processing phase in Python, the refined dataset was imported into Excel. 
+										Here, advanced Excel functions like PivotTables, XLOOKUP, and conditional formatting were employed to dissect the data, 
+										uncovering patterns in event types, pricing dynamics, and venue influences. The analysis was then visualized in a 
+										narrative-driven dashboard, guiding users through a journey of LA's entertainment scene and culminating in 
+										actionable insights and recommendations. </p>
+
+									<center><img src="images/seatgeek_DrillDown1.png" width="900">
+									<br>- <i>A first drill down into understanding live events from the view of 'scores' which attribute estimated sales 
+										volumes at the event, performer, venue level. 
+									</i><br><br></center>
+									
+									<center><img src="images/seatgeek_DrillDown2.png" width="900">
+										<br>- <i>A drill down specifically around Price and it's impact across various aspects of event data such as venue, 
+											performer, and over time.</i><br><br>
+									<img src="images/seatgeek_Pivot3.png" width="900">
+									<img src="images/seatgeek_Pivot1.png" width="900">
+									<br>- <i>Invidial worksheets were leveraged to organize the dashboard and individual drill downs, this is one example of it. 
+										Leveraging pivot tables, and pivot charts to refine the visual needed before moving it to its final location. 
+									</i><br><br></center>
+									<p><b>Data Analysis Tools</b>: The project's analysis was intricately carried out using Excel, leveraging a diverse range of functions and features. Key tools and functions include:
+										<ul><li><b>PIVOT TABLES</b> for data summarization and categorization.</li>
+											<li><b>DATA VALIDATION</b> for creating interactive dropdown menus to guide user navigation.</li>
+											<li><b>VLOOKUP & XLOOKUP</b> for cross-referencing and data retrieval across tables.</li>
+											<li><b>AVERAGE, AVERAGEIFS, COUNTIFS</b> to calculate metrics and filter data based on specific criteria.</li>
+											<li>Text manipulation through <b>LEFT, MID, RIGHT, CONCATENATE.</b></li>
+											<li><b>Macros & VBA</b> for automation and enhanced workbook interactivity.</li>
+											<li><b>DATE FUNCTIONS</b> like <b>MONTH, YEAR, DAY</b> to dissect and understand time-based trends.</li>
+											<li>Various charting tools, from bar charts to scatter plots, to visualize the data and craft the narrative.</li>
+										</ul></p>
+
+									<p><b>Key Insights Derived</b>:
+										<ul><li>Music events, in terms of volume, lead the entertainment sector, yet demand intricacies are shaped by both the artist and the venue characteristics.</li>
+											<li>Event prices display seasonality, with distinct trends appearing during festive periods and at the onset of summer.</li>
+											<li>The prominence of venues in determining event allure was evident, with specific venues distinctly influencing demand and attendance.</li>
+										</ul></p>
+									<p><B><I>Some future considerations:</I></B>
+										<ul><li><b>Deeper Dive into Outliers:</b> A focused analysis on events that deviate significantly from the norm, like those with exceptionally high prices or popularity scores, to understand the unique factors driving their success.
+											<li><b>External Factors Analysis:</b> Integrate external datasets like social media trends, citywide events, or tourism data to see how they influence entertainment demand.
+											<li><b>Demographic Analysis:</b> By pairing with demographic or audience data, one could analyze preferences by age, gender, or other factors, offering a deeper understanding of the audience landscape.
+											<li><b>Feedback Loop:</b> Sharing the dashboard with actual event organizers, marketers, or venue owners for feedback can offer new perspectives and refinement areas.
+											<li><b>Regular Updates:</b> As with any dynamic sector, the entertainment scene will evolve. Periodic data refreshes and analyses can track these changes, ensuring the insights remain relevant and timely.
+											<li><b>Integration with Other Data Platforms:</b> Explore the possibility of combining this data with other platforms like Spotify for music events or sports analytics tools for sports events to offer a more holistic view.</li>
+
+										</ul></p>
+									<a href="#top"><B>Go to top.</B></a>
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<!--<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>-->
+							<!--<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>-->
+							<ul class="contact">
+								<!--<li class="icon solid fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>-->
+								<!--<li class="icon solid fa-phone">(000) 000-0000</li>-->
+								<li class="icon brands fa-github"><a href="https://github.com/mlopez417">Github/Melz</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/mariela-e-lopez/">Linkedin/Melz</a></li>
+								<li class="icon fal fa-edit"><a href="https://public.tableau.com/app/profile/mariela.lopez">Tableau/Melz</a></li>
+								<!--<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
